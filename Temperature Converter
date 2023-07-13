@@ -1,0 +1,21 @@
+# Temperature Converter
+# Introductory Print Statement
+print("""
+Hello User! Welcome To The Temperature Converter
+This Program Takes A Temperature Measurement And Converts To The Desired Output
+""")
+# User Input Variable
+scalar = input("Enter The Current Temperature: ")
+# User Defines Metric In An Input
+metric = input("Please Enter The Starting Metric: (F) For Fahrenheit, (C) For Celsius ").upper()
+# Conditional If Statement
+if metric == "F":
+    # Conversion
+    temperature = (int(scalar) - 32) * (5/9)
+    # Print Result
+    print(f"Your Temperature is: {temperature} Degrees C")
+elif metric == "C":
+    # Conversion
+    temperature = (int(scalar) * (9/5)) + 32
+    # Print Result
+    print(f"Your Temperature is: {temperature} Degrees F")
